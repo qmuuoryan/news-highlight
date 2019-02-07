@@ -1,5 +1,6 @@
-start.sh
+
 virtual/
 .vscode/
 .venv/
 *.pyc/
+start.sh
