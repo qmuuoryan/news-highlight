@@ -1,11 +1,15 @@
-from flask import render_template
+from flask import render_template,request,redirect,url_for
 from . import main
 from ..request import get_sources,get_articles
 from ..models import Source,Article
+
 # Views
 @main.route('/')
 def index():
-    '''View the index page and its data'''
+    '''
+    View the index page and its data
+
+    '''
     title = 'News Highlight'
     general_sources = get_sources('general')
     business_sources = get_sources('business')
@@ -15,7 +19,9 @@ def index():
 
 @main.route('/articles/<id>')
 def articles(id):
-    '''View a specific source page and its articles'''
+    '''
+        View a specific source page and its articles
+    '''
     articles = get_articles(id)
-    title = f'{id}'
-    return render_template('articles.html',id = id, articles = articles)
+    title = (f'{id}')
+    return render_template('articles.html', title=title, id = id, articles = articles)

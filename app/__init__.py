@@ -8,7 +8,7 @@ def create_app(config_name):
 
     app = Flask(__name__)
 
-    #Creating the app configurations
+    # Creating the app configurations
     app.config.from_object(config_options[config_name])
 
     #Initializing flask extensions
@@ -22,5 +22,5 @@ def create_app(config_name):
     from .request import configure_request
     configure_request(app)
 
-    # Will add the views
+    
     return app
