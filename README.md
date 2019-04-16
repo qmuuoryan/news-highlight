@@ -2,34 +2,30 @@
 
 A website that uses the news API to display selected news sources together with their articles.
 
-By Ryan Muuo on 7th February 2019 
-
-## Installation
- python
+By [Ryan Muuo] on 16th April 2019 
 
 
+# User Stories
+
+- A user should see various news sources on the homepage.
+- A user should see all news articles from a selected news source.
+- A user should see the image, description and time that an article was created.
+- A user should be able to read the full article on the sources website.
 
 
 
-## Behaviour Driven Development
+# Behaviour Driven Development
+1. view various news sources and see more bof the articles
+2.	proceed to the articles and read the selected article
 
-The program should display news sources:
 
-Input Example: On page load
 
-Output Example: Panels of various news sources is displayed per category
 
-The program should display articles from a selected news source:
-
-Input Example: Click on news source
-
-Output Example: Redirected to a page with a list of articles from the selected source
-
-The program should display original news page of the selected article:
-
-Input Example: Click on Read more... button
-
-Output Example: Redirected to the original source page with the full story on the article
+# Technlogies Used
+- Python 3.6
+- HTML
+- Bootstrap
+- JavaScript
 
 
 
@@ -38,6 +34,13 @@ Output Example: Redirected to the original source page with the full story on th
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
 Please make sure to update tests as appropriate.
+
+# Support and contact details
+In case of any problems reach me through my email:ryanmuuo91@gmail.com
+
+
+
+
 
 ## License
 MIT License

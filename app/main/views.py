@@ -10,7 +10,7 @@ def index():
     View the index page and its data
 
     '''
-    title = 'News Highlight'
+    title = 'News'
     general_sources = get_sources('general')
     business_sources = get_sources('business')
     sports_sources = get_sources('sports')
